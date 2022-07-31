@@ -1,3 +1,4 @@
 From tomcat
-COPY $(build.artifactstagingdirectory) /usr/local/tomcat/webapps
+WORKDIR /usr/local/tomcat/webapps
+COPY ..
 CMD ["catalina.sh", "run"]
