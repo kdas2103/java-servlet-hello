@@ -1,4 +1,4 @@
 From tomcat
 WORKDIR /usr/local/tomcat/webapps
-COPY ..
+COPY . .
 CMD ["catalina.sh", "run"]
